@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript of Things</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Alexey Taktarov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/vendor/reveal.min.css">
+		<link rel="stylesheet" href="css/vendor/reveal.night.css" id="theme">
+		<link rel="stylesheet" href="css/vendor/zenburn.css">
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<canvas id="videoCanvas" width="240" height="240">
+				</section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="js/vendor/head.min.js"></script>
+		<script src="js/vendor/reveal.min.js"></script>
+		<script src="js/vendor/jsmpeg.js"></script>
+		<script src="js/vendor/jquery-2.1.0.js"></script>
+		
+		<script src="js/streaming.js"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'js/vendor/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
