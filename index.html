@@ -1,72 +1,165 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>JavaScript of Things</title>
+    <title>JavaScript of Things</title>
 
-		<meta name="description" content="">
-		<meta name="author" content="Alexey Taktarov">
+    <meta name="description" content="">
+    <meta name="author" content="Alexey Taktarov">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/vendor/reveal.min.css">
-		<link rel="stylesheet" href="css/vendor/reveal.night.css" id="theme">
-		<link rel="stylesheet" href="css/vendor/zenburn.css">
+    <link rel="stylesheet" href="css/vendor/reveal.min.css">
+    <link rel="stylesheet" href="css/vendor/reveal.night.css" id="theme">
+    <link rel="stylesheet" href="css/vendor/zenburn.css">
 
-		<link rel="stylesheet" href="css/main.css">
-	</head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<canvas id="videoCanvas" width="240" height="240">
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+        </section>
 
-				
+        <section data-background="images/bothersome.jpg">
+        </section>
 
-			</div>
+        <section data-background="images/malkovich.jpg">
+        </section>
 
-		</div>
+        <section>
+          <canvas id="videoCanvas" width="240" height="240">
+        </section>
 
-		<script src="js/vendor/head.min.js"></script>
-		<script src="js/vendor/reveal.min.js"></script>
-		<script src="js/vendor/jsmpeg.js"></script>
-		<script src="js/vendor/jquery-2.1.0.js"></script>
-		
-		<script src="js/streaming.js"></script>
-		<script>
+        <section data-background="#F52C65">
+          <!-- We will steal some stuff -->
+          <link rel="stylesheet" href="http://ashkenas.com/stylesheets/all.css" />
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: false,
-				history: true,
-				center: true,
+          <div class="magic">
+            <span class="fragment" style="font-size:3.88em" >node.js</span><br>
+            <span class="fragment" style="font-size:2.16em">coffeescript</span><br>
+            <span class="fragment" style="font-size:2.92em">backbone</span><br>
+            <span class="fragment" style="font-size:6.41em">jade</span><br>
+            <span class="fragment" style="font-size:4.42em">stylus</span><br>
+            <span class="fragment" style="font-size:4.13em">mongo</span><br>
+          </div>
+        </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+        <section data-background="#1a8f78">
+          <img src="images/moustache.png">
+        </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'js/vendor/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+         <section data-background="#ffffff">
+          <img src="images/code-hipster.png">
+        </section>
 
-		</script>
 
-	</body>
+        <section data-background="#000000">
+          <img src="images/photo-problem.png">
+        </section>
+
+        <section data-background="#000000">
+          <img src="images/problem-solution.png">
+        </section>
+
+        <section data-background="#F52C65">
+          <div class="magic">
+            <span style="font-size:2.2em;">node-canvas</span><br>
+          </div>
+        </section>
+
+
+        <section data-background="images/problem-result.png">
+        </section>
+
+        <!-- UI -->
+        <section data-background="#F52C65">
+          <div class="magic">
+            <span class="fragment" style="font-size:3.81em;">brunch</span><br>
+            <span class="fragment" style="font-size:3.65em;">chaplin</span><br>
+          </div>
+        </section>
+
+
+        <!-- Outro -->
+
+        <section data-background="#000000">
+          <p>
+          <div class="magic">
+            <a href="http://steviewhale.com" style="font-size:2.5em;">
+              <span style="">steviewhale.com</span>
+            </a>
+          </div>
+          </p>
+  
+          <p>
+          <div class="magic">
+            <a href="http://github.com/molefrog/cupsidity">
+              <span style="">github.com/molefrog/cupsidity</span>
+            </a>
+
+            <a href="http://github.com/molefrog/steviewhale">
+              <span style="">github.com/molefrog/steviewhale</span>
+            </a>
+
+            <a href="http://github.com/molefrog/steviewhale-agent">
+              <span style="">github.com/molefrog/steviewhale-agent</span>
+            </a>
+          </div>
+        </p>
+        </section>
+
+        <section data-background="#F52C65">
+          <div class="magic">
+            <a href="http://molefrog.com/jsthings">
+              <span style="font-size:1.4em;">molefrog.com/jsthings</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/vendor/reveal.min.js"></script>
+    <script src="js/vendor/jsmpeg.js"></script>
+    <script src="js/vendor/jquery-2.1.0.js"></script>
+    
+    <script src="js/streaming.js"></script>
+    <script src="js/magic.js"></script>
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'js/vendor/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
