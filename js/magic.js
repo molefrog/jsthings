@@ -8,7 +8,7 @@ function makeMagic() {
       var e = $( this );
       var c = 500 / e.width() ;
 
-      console.log(e.text(), c);
+      // console.log(e.text(), c);
       //e.css('font-size', c.toFixed(3) + 'em');
     });
   }
